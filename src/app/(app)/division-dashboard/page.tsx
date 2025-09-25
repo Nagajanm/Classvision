@@ -136,8 +136,8 @@ export default function Page() {
       const semData = response.data.data.map((se: any) => {
         return {
           id: se.semester_id,
-          students: 45,
-          teachers: se.total_subjects,
+          students: 3,
+          teachers: 2,
           subjects: se.total_subjects,
           progress: calculateProgress(se.semester_start_date.split("T")[0], se.semester_end_date.split("T")[0]),
           startDate: se.semester_start_date.split("T")[0],
